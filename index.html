@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edinburgh Tourist Spots</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <div id="infoContainer">
+      <h1>Edinburgh Tourist Spots</h1>
+
+      <p>Welcome to Edinburgh! Where would you like to visit?</p>
+
+      <p><input type="search" placeholder="Enter a place..." data-bind="textInput: userSearch"></p>
+
+      <div>
+        <h3>Current locations: <span data-bind="text: userSearch"></span></h3>
+      </div>
+
+      <div>
+        <ul data-bind="foreach: selectPlaces">
+          <li data-bind="text: title, click: $parent.listItemClicked"></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div>
+        <h3>Here in the New York Times...</h3>
+        <ul class="articleSection" data-bind="foreach: selectArticles">
+          <li class="generatedArticle" data-bind="html: $data"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/knockout-3.4.0.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeILWW4jQdRslyUG4qfd_YAjDc4NTNI-s&callback=initMap"
+    onerror="mapsError()" async defer></script>
+
+  </body>
+
+</html>

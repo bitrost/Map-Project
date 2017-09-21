@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #B3D1FF;
+}
+
+h1,
+h2,
+p,
+h3 {
+  padding: 10px 0 0 10px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#infoContainer {
+  width: 25%;
+  float: left;
+}
+
+#map {
+  height: 100%;
+  width: 75%;
+  float: right;
+}
+
+.articleSection {
+  padding-left: 1px;
+}
+
+.generatedArticle {
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 924px) {
+  #infoContainer {
+    width: 100%;
+  }
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+}
