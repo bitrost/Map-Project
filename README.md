@@ -5,5 +5,5 @@ An interactive tourist map of the city of Edinburgh. Results can be filtered usi
 ## APIs, tools and data used
 
 * Google Maps API
-* Backbone.js
+* Knockout.js
 * New York Times API
